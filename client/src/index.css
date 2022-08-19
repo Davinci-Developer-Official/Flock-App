@@ -1,0 +1,395 @@
+body {
+  background-color: rgb(229, 72, 72);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.chat-display{
+  width: 100%;
+  height:fit-content;
+  
+  display:flex;
+  background-color: rgb(194, 194, 62);
+}
+.group-display{
+  width:100%;
+  display: flex;
+  height: fit-content;
+  background-color:rgb(194, 194, 62);
+  
+}
+.sidebar{
+  height: fit-content;
+  background-color: black;
+  width: 100px;
+  color: silver;
+}
+
+.chats{
+  width:98%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height:fit-content;
+  display:flex;
+  color: yellow;
+  background-color:black;
+}
+.groups{
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  color: yellow;
+  height: fit-content;
+  display: flex;
+  background-color: black;
+  /*flex-direction: row;*/
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.group-entry{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.chat-entry{
+  display: flex;
+  flex-direction: column ;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.single-chat{
+  width:96%;
+  background-color: black;
+  height: 50px;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  cursor: pointer;
+  justify-content: space-evenly;
+
+}
+.single-group{
+  width: 96%;
+  height: 50px;
+  margin-top: 2%;
+  background-color: black;
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bars{
+  z-index: 2;
+  right: 30;
+}
+.chat-box{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(73, 73, 198);
+}
+.group-box{
+  width: 80%;
+  height: 100%;
+  justify-content:var(200px);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(73, 73, 198);
+}
+.title-bar{
+  background-color: black;
+  height: 60px;
+  display: flex;
+  margin-top: 0px;
+}
+.title-bar p{
+  font-size: smaller;
+  text-align: center;
+  margin-left: 10%;
+}
+.side-content{
+  margin-top: 20%;
+  background-color: white;
+  height: 40px;
+  
+  cursor: pointer;
+  text-align: center;
+  
+}
+.side-content p{
+  font-size: small;
+  padding-top: 10%;
+  color: black;
+}
+.leave{
+  margin-top: 3%;
+  margin-left: 1%;
+}
+.response{
+  margin-right: 3px;
+  margin-left: 3px;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  color: black;
+  border-radius: 3%;
+  margin-top: 4%;
+  font-size: small;
+  padding: 2%;
+  width:fit-content;
+  height: fit-content;
+}
+.tag{
+  cursor: pointer;
+  background-color: aqua;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.send{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  color: black;
+  border-radius: 3%;
+  margin-top: 2%;
+  font-size: small;
+  padding: 2%;
+}
+.message-box{
+  background-color: rgb(118, 111, 111);
+  color: black;
+  height: fit-content;
+  bottom: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.util{
+  background-color: black;
+  height: 30px;
+  width: 100%;
+}
+.sending{
+  display: flex;
+  
+  height: 50px;
+  padding: 2%;
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  overflow-y:scroll;
+ margin-top: 1%;
+}
+.textbox{
+  margin-left:1px ;
+  width: 90%;
+  background-color: aquamarine;
+}
+.post{
+  margin-left: 5%;
+  margin-top: 15px;
+  margin-right: 2%;
+  cursor: pointer;
+  
+
+}
+.text-options{
+  height: 30px;
+  width: 30px;
+  z-index: 5;
+  background-color: red;
+
+}
+.thread{
+  display:flex;
+  flex-direction:row;
+  height: 350px;
+  background-color: black;
+  width: 550px;
+  margin-left: .11%;
+  margin-top: 3%;
+  color: white;
+}
+.thread-container{
+  width: 99%;
+  background-color:yellow;
+  display: flex;
+  
+ 
+
+}
+.thread-header{
+  width: 15%;
+ justify-content: space-between;
+  margin-left: 2%;
+  margin-top: 18px;
+  background-color: black;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+
+ 
+}
+/*.burger{
+  margin-left: 1%;
+  color: black;
+  
+}*/
+.trh{
+  background-color:green ;
+  margin-left: 10px;
+  margin-right: 10%;
+  width: 80%;
+  height: fit-content;
+  
+}
+.trh p{
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+}
+.topics{
+  color: yellow;
+  width:100%;
+  height: 100%;
+  margin-left: 2%;
+  background-color: black;
+  overflow-y: scroll;
+}
+.single-topic{
+  width: 98%;
+  border-radius:1% ;
+  margin-left: 1%;
+  margin-top: 2%;
+  background-color: blue;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.single-topic p {
+
+  font-size: medium;
+  text-align: inherit;
+}
+.topic-alt{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  
+  justify-content: space-evenly;
+  cursor: pointer;
+  background-color: rgb(62, 176, 211);
+}
+.latest-thread{
+ z-index: 5;
+  width: 430px;
+  position: absolute;
+  margin-left: 530px;
+  background-color: black;
+  height: 350px;
+  overflow-y:scroll ;
+  margin-top: -30px;
+}
+.close{
+  margin-right: 2px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.user{
+  color: black;
+  background-color: yellow;
+  border-color: black;
+  border-style: solid;
+  margin-left: 50px;
+}
+.reg-form{
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: yellow;
+  margin-left: 20%;
+  width: 200px ;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+  
+}
+.login{
+  background-color: rgb(0, 0, 0);
+  color: yellow;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 200px;
+  margin-top: 4%;
+  align-items: center;
+  text-align: center;
+  
+}
+.wsr{
+  display: flex;
+  width: 300px;
+  margin-top: 1%;
+  margin-left: 10%;
+  background-color: black;
+  color: yellow;
+  justify-content: space-evenly;
+}
+.lwg{
+  margin-top: 1%;
+  margin-left: 20%;
+  background-color: black;
+  color:yellow;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+  
+}
+.gac{
+  margin-top: 1%;
+  margin-left: 20%;
+  background-color: black;
+  color:yellow;
+  width: 200px;
+  height: 40px;
+  cursor: pointer;
+}
+.create-topic{
+  position: absolute;
+  margin-left: 550px;
+  background-color: red;
+  height: 350px;
+  width: 400px;
+  margin-top: -120px;
+}
