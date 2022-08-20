@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { FaCommentMedical, FaObjectUngroup, FaPlus, FaRetweet } from 'react-icons/fa'
 import Createtopic from './Createtopic';
-import Latestthread from './Latestthread';
-
+//import Latestthread from './Latestthread';
+import User from './User';
 function Threadheader() {
     const [thread,showThread]=useState(false);
     let exit = ()=>showThread(false)
@@ -20,8 +20,8 @@ function Threadheader() {
                 <FaCommentMedical 
                 onClick={()=>showThread(true)}
                 />
-                Latest Topics 
-                {thread &&<Latestthread exit={exit} /> }
+                Account 
+                {thread &&<User exit={exit} /> }
             </p> 
         </span>
         <span className='trh'

@@ -2,12 +2,17 @@
 import React from 'react'
 import { FaTimes } from 'react-icons/fa'
 
-function Createtopic({exiting}) {
+function Createtopic() {
   return (
     <>
     <div className='create-topic'>
         <FaTimes className='close'
-        onClick={exiting}
+        onClick={()=>{
+          window.location.reload()
+        }}
+        onDoubleClick={()=>{
+          window.location.reload()
+        }}
         />
 
     </div>

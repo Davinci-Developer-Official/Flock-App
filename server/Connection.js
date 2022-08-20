@@ -19,13 +19,16 @@ app.use(express.json);
 app.use(express.urlencoded({extended: false}));
 
 //connection apis.
+let data =[
+     {
+          animal:'snake'
+     }
+]
 app.get('/data',async(req,res)=>{
     try {
      console.log(`data flowing`);
      res.writeHead(200)
-     res.send({
-          animal:'snake'
-     })
+     res.send(data)
     } catch (error) {
      console.error(error)
     }

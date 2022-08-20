@@ -1,11 +1,24 @@
-import React, { useState } from 'react'
-import { FaGem, FaGoogle } from 'react-icons/fa';
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react';
+import { FaGem, FaGoogle, FaTimes } from 'react-icons/fa';
 
 function User() {
     let[reg,showReg]=useState(true);
-    let [login,showLogin]=useState(false)
+    let [login,showLogin]=useState(false);
+  
   return (
     <div className='user' >
+        <FaTimes 
+        className='close'
+         onClick={()=>{
+            window.location.reload();
+         }
+           
+        }
+        onDoubleClick={()=>{
+            window.location.reload();
+        }}/>
         <div className='wsr'>
         <input type='radio'
         onClick={()=>{
@@ -14,7 +27,7 @@ function User() {
             
             
         }}
-        />Already have an account
+        />Create flock account account
         <input type='radio'
         onClick={()=>{
             showLogin(true)
@@ -24,7 +37,7 @@ function User() {
         login to account
         </div>
         {reg&&(
-        <form className='reg-form'>
+        <form className='reg-form' >
             <label>
                 Username
             <input type='text' placeholder='John Furgerson' />
@@ -60,16 +73,22 @@ function User() {
                     login 
                     <input type='submit' />
                 </label>
+
+                <p href="" className='forgot-password' >
+                    Forgot password ?
+                </p>
             </form>
         )
-
         }
+
+       
         <button className='lwg'>
            <FaGoogle/> Login with Google
         </button>
         <button className='gac'>
           <FaGem/>  Login with Glitex a/c
         </button>
+        
     </div>
   )
 }

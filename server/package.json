@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": " node server.js",
-    "server":"nodemon  server.js ",
-    "users":" nodemon ./V1/Apis/Users.js",
-    "conn":"nodemon ./Connection.js"
+    "server": "nodemon  server.js ",
+    "users": " nodemon users.js",
+    "conn": "nodemon ./Connection.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "nodemon": "^2.0.19",
+    "pg": "^8.7.3",
     "socket.io": "^4.5.1"
   },
   "devDependencies": {
